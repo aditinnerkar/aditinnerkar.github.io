@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aditi Nerkar | AI Engineer</title>
+<meta name="description" content="Aditi Nerkar, AI Engineer in Pune. Agentic RAG, GenAI and full-stack systems delivered for BENTELER at Fraunhofer IEM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f8fb;--ink:#14213d;--mut:#4a5873;--ac:#2f5bea;--on:#fff;--hi:#f2a93b;--ln:#d5dce8;--sf:#fff;color-scheme:light dark}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1626;--ink:#e8edf7;--mut:#a3b0c8;--ac:#7c9bff;--on:#0f1626;--ln:#26324d;--sf:#16203a}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.15;margin:0}
+h1{font-size:clamp(2.6rem,8vw,4.4rem);font-weight:800;letter-spacing:-.02em}
+h2{font-size:1.9rem;font-weight:800;margin-bottom:1.2rem}
+h3{font-size:1.3rem;font-weight:600}
+h4{font:600 1rem "Public Sans",sans-serif;margin:1.1rem 0 .2rem}
+p,ul{margin:.3rem 0}
+a{color:var(--ac)}
+:focus-visible{outline:3px solid var(--hi);outline-offset:3px;border-radius:3px}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:var(--sf);padding:.5rem 1rem;z-index:30}
+header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--ln);z-index:10}
+nav,main{max-width:860px;margin:0 auto;padding:0 1.25rem}
+nav{display:flex;gap:1.4rem;flex-wrap:wrap;padding-top:.7rem;padding-bottom:.7rem;font-weight:600}
+nav a{text-decoration:none;color:var(--ink)}nav a:hover{color:var(--ac)}
+section,article{scroll-margin-top:4.5rem}
+main>section{padding:3.2rem 0;border-bottom:1px solid var(--ln)}
+.flash{animation:fl 1.8s}
+@keyframes fl{0%,60%{box-shadow:0 0 0 8px color-mix(in srgb,var(--hi) 45%,transparent)}100%{box-shadow:0 0 0 8px transparent}}
+#top{padding-top:4rem}
+.role{font:600 1.35rem "Bricolage Grotesque",sans-serif;color:var(--ac);margin:.6rem 0}
+.lead{max-width:62ch;font-size:1.15rem}
+.meta{color:var(--mut)}
+.btns{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.4rem}
+.btn{display:inline-block;padding:.65rem 1.2rem;border:2px solid var(--ac);border-radius:4px;font-weight:600;text-decoration:none}
+.btn.p{background:var(--ac);color:var(--on)}
+dl.im{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1.2rem;margin:0}
+.im div{border-left:4px solid var(--hi);padding-left:1rem}
+.im dt{font:800 2rem "Bricolage Grotesque",sans-serif}
+.im dd{margin:0;color:var(--mut)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.4rem}
+.card{display:block;padding:1.1rem 1.2rem;background:var(--sf);border:1px solid var(--ln);border-left:6px solid var(--ac);color:var(--ink);text-decoration:none}
+.card:hover,.card:focus-visible{border-left-color:var(--hi)}
+.card p{color:var(--mut)}
+.tags{font-size:.9rem}
+article{margin-top:3rem;padding-top:1.6rem;border-top:1px solid var(--ln)}
+.flow{margin-top:1.4rem;background:var(--sf);border:1px solid var(--ln);padding:1rem 1.2rem}
+.flow ol{list-style:none;margin:.8rem 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.7rem;counter-reset:s}
+.flow li{counter-increment:s;padding:.6rem .7rem;border:2px solid var(--ln);font-size:.92rem;line-height:1.4}
+.flow li b{display:block;margin-bottom:.2rem}
+.flow li b:before{content:counter(s) ". "}
+.flow li.on{border-color:var(--hi);background:color-mix(in srgb,var(--hi) 18%,transparent)}
+.flow .st{min-height:3rem;font-weight:600}
+.flow button,#acts button,#gt{font:600 .9rem "Public Sans",sans-serif;padding:.4rem .8rem;border:2px solid var(--ac);background:transparent;color:var(--ac);border-radius:4px;cursor:pointer;margin:0 .4rem .4rem 0}
+.flow:not(.walking) .w,.flow.walking .s{display:none}
+.cap{font-size:.88rem;color:var(--mut)}
+.job{margin-bottom:1.6rem}.job p:first-child{font-weight:600}
+.skills div{margin-bottom:.9rem}.skills b{display:block}
+#guide{position:fixed;right:max(14px,env(safe-area-inset-right));bottom:max(14px,env(safe-area-inset-bottom));z-index:20;display:flex;flex-direction:column;align-items:flex-end;gap:.4rem;max-width:min(300px,86vw)}
+#bubble{background:var(--sf);border:2px solid var(--ink);padding:.7rem .9rem;font-size:.92rem;line-height:1.45;box-shadow:4px 4px 0 var(--hi)}
+#bubble p{margin:0 0 .5rem}
+#av{background:none;border:0;padding:0;cursor:pointer}
+#av svg{display:block;width:50px;height:70px;animation:bob 1.6s steps(2) infinite}
+@keyframes bob{50%{transform:translateY(-4px)}}
+#guide.off #bubble,#guide.off #av{display:none}
+#gt{background:var(--sf);font-size:.8rem;padding:.25rem .6rem;margin:0}
+.sv{overflow-x:auto}.sv svg{display:block;min-width:720px;width:100%;height:auto}
+.z{fill:none;stroke:var(--ln);stroke-width:2}.z.dash{stroke-dasharray:6 5}
+.e{fill:none;stroke:var(--mut);stroke-width:1.4}
+svg .a{fill:color-mix(in srgb,var(--ac) 16%,var(--sf));stroke:var(--ac)}svg .d{fill:color-mix(in srgb,var(--hi) 24%,var(--sf));stroke:var(--hi)}svg .n{fill:var(--sf);stroke:var(--mut)}
+svg g rect{stroke-width:1.5}
+.t{fill:var(--ink);font:700 13px "Public Sans",system-ui,sans-serif}.sb{fill:var(--mut);font:11.5px "Public Sans",system-ui,sans-serif}
+.walking [data-n]{opacity:.3;transition:opacity .2s}.walking [data-n].on{opacity:1}
+svg g.on rect{stroke:var(--hi);stroke-width:3.5}
+.flow summary{cursor:pointer;color:var(--ac);font-weight:600;margin-top:.6rem}
+.flow ol.txt{display:block;margin:.5rem 0}.flow .txt li{border:0;padding:.2rem 0;font-size:.95rem}.flow .txt li b:before{content:none}.flow .txt li b{display:inline}
+footer{max-width:860px;margin:0 auto;padding:2rem 1.25rem 7rem;color:var(--mut);font-size:.9rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><nav aria-label="Main"><a href="#top">Aditi Nerkar</a><a href="#impact">Impact</a><a href="#work">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav></header>
+
+<main id="main">
+<section id="top" data-cue="Click me any time and I will point you to the right part of this page.">
+<h1>Aditi Nerkar</h1>
+<p class="role">AI Engineer</p>
+<p class="lead">I design and deploy production GenAI systems: agentic RAG pipelines, semantic retrieval and LLM-powered knowledge assistants. I build them end to end, from client requirements to the interface people use.</p>
+<p class="meta">Pune, India. Open to remote, hybrid and on-site roles.</p>
+<div class="btns"><a class="btn p" href="Aditi_Nerkar_CV_AI_Engineer.pdf" download>Download CV</a><a class="btn" href="mailto:aditi.careers.cs@gmail.com">Email me</a><a class="btn" href="https://linkedin.com/in/aditi-nerkar-428780167">LinkedIn</a></div>
+</section>
+
+<section id="impact" data-cue="These numbers come from the two BENTELER projects below.">
+<h2>Impact</h2>
+<dl class="im">
+<div><dt>Under 3 s</dt><dd>answer time of the production knowledge assistant</dd></div>
+<div><dt>95%+</dt><dd>BOM extraction accuracy across ~1,000 CAD drawings</dd></div>
+<div><dt>2 days</dt><dd>to roll the containerized assistant out to production</dd></div>
+<div><dt>3.5+ years</dt><dd>across systems, full-stack and AI engineering</dd></div>
+</dl>
+</section>
+
+<section id="work" data-cue="Hover or focus a project and I will tell you what it solved.">
+<h2>Projects</h2>
+<p class="meta">Both were delivered for BENTELER (Industry 4.0 / manufacturing) at Fraunhofer IEM. Details are limited under NDA, so each case study covers the problem, the approach and an architecture view.</p>
+<div class="cards" style="margin-top:1.2rem">
+<a class="card" href="#cs-rag" data-hook="This replaced manual document search with a chat assistant that answers in under 3 seconds."><h3>Agentic RAG Knowledge Assistant</h3><p>Natural-language chat over years of best-practice knowledge.</p><p class="tags">Vanna.ai, ChromaDB, PostgreSQL, Azure OpenAI, Docker</p></a>
+<a class="card" href="#cs-cad" data-hook="This turns large CAD drawings into editable Bills of Material with 95%+ accuracy."><h3>Automated BOM Extraction from CAD Drawings</h3><p>Large CAD drawings in, reviewable Bills of Material out, ready for cost and assembly planning.</p><p class="tags">Azure Document Intelligence, React, Tailwind CSS</p></a>
+</div>
+
+<article id="cs-rag" data-cue="Press Walk me through it and I will step through the architecture.">
+<h3>Agentic RAG Knowledge Assistant</h3>
+<h4>Problem</h4>
+<p>Project-management and cost-calculation teams found past best practices and lessons learned through manual document search, outreach to managers and static Excel reports.</p>
+<h4>Approach</h4>
+<p>I designed an agentic text-to-SQL RAG system. A Vanna agent plans and calls tools, a retrieval layer matches each question to schema, documentation and example SQL in a ChromaDB knowledge base, and agent memory keeps past question-to-SQL pairs. Records sit in PostgreSQL, chat runs through OpenWebUI, and Azure OpenAI supplies embeddings and chat models. I compared OpenAI and Azure OpenAI APIs, open-source LLMs (Llama, Mistral) and Hugging Face models on accuracy, latency and cost.</p>
+<h4>Outcome</h4>
+<p>Answers return in under 3 seconds. The full stack is containerized with Docker, and the production rollout took 2 days.</p>
+<div class="flow" data-id="rag">
+<p class="cap">Simplified view. Internal names are generalized.</p>
+<div class="fig"></div>
+<p class="st" aria-live="polite"></p>
+<button class="s" data-a="start">Walk me through it</button>
+<span class="w"><button data-a="prev">Back</button><button data-a="next">Next</button><button data-a="stop">Stop</button></span>
+<details><summary>Read the steps as text</summary><ol class="txt"></ol></details>
+</div>
+</article>
+
+<article id="cs-cad" data-cue="Same here: press Walk me through it to see how a drawing becomes a BOM.">
+<h3>Automated BOM Extraction from CAD Drawings</h3>
+<h4>Problem</h4>
+<p>Cost calculation and manufacturing, welding and assembly planning depended on Bill of Materials data locked inside large, complex CAD drawings.</p>
+<h4>Approach</h4>
+<p>I explored training open-source computer-vision models (YOLOv8), then settled on Azure Document Intelligence with custom chunking-and-rejoining logic for large files. I also designed and built the whole React front end (Tailwind CSS, Ant Design) from Figma and Excalidraw flows.</p>
+<h4>Outcome</h4>
+<p>95%+ extraction accuracy across ~1,000 drawings, in a three-screen workflow: upload, editable BOM review with interactive preview, and Excel/CSV export. The proof of concept led BENTELER to commission the RAG project above.</p>
+<div class="flow" data-id="cad">
+<p class="cap">Simplified view of the architecture.</p>
+<div class="fig"></div>
+<p class="st" aria-live="polite"></p>
+<button class="s" data-a="start">Walk me through it</button>
+<span class="w"><button data-a="prev">Back</button><button data-a="next">Next</button><button data-a="stop">Stop</button></span>
+<details><summary>Read the steps as text</summary><ol class="txt"></ol></details>
+</div>
+</article>
+</section>
+
+<section id="experience" data-cue="Fraunhofer IEM first, then two roles at IBM.">
+<h2>Experience</h2>
+<div class="job"><h3>AI Engineer, Fraunhofer IEM</h3><p>Paderborn, Germany. Aug 2024 to May 2026</p>
+<ul><li>Delivered two end-to-end AI solutions for BENTELER: a CAD-to-BOM platform and an agentic RAG assistant.</li>
+<li>Owned the client relationship: requirements, demos, and turning manufacturing and cost-calculation processes into automated workflows for non-technical stakeholders.</li>
+<li>Worked across the stack: model selection and evaluation, API integrations, retrieval engineering, Docker deployment and React interfaces.</li></ul></div>
+<div class="job"><h3>Infrastructure Specialist, IBM India</h3><p>Mar 2022 to Sep 2022</p>
+<ul><li>Technical point of contact for incident and change management for Marriott Bonvoy, including infrastructure decisions and escalations.</li>
+<li>Extended CI/CD and automation practices, reducing manual configuration effort.</li></ul></div>
+<div class="job"><h3>Associate System Engineer, IBM India</h3><p>Feb 2021 to Feb 2022</p>
+<ul><li>Managed CI/CD pipelines (Jenkins, AWS, IBM Cloud) and led incident and change management with ServiceNow.</li>
+<li>Wrote incident reports and worked with stakeholders to resolve issues.</li></ul></div>
+</section>
+
+<section id="skills" data-cue="Grouped into AI, frontend and backend.">
+<h2>Skills</h2>
+<div class="skills">
+<div><b>AI and Generative AI</b>Agentic AI architecture, RAG, LangChain, LlamaIndex, multi-agent tool integration, OpenAI APIs, Azure OpenAI, open-source models (Llama, Mistral), Hugging Face, ChromaDB, prompt engineering, Vanna AI (text-to-SQL), OpenWebUI.</div>
+<div><b>Frontend</b>React.js, Three.js, JavaScript, HTML5/CSS3, Tailwind CSS, Ant Design, Figma, Excalidraw.</div>
+<div><b>Backend and DevOps</b>FastAPI, Python, Docker, CI/CD with Jenkins, AWS, IBM Cloud, ServiceNow ITSM, Linux shell scripting, SQL, PostgreSQL, Tableau.</div>
+</div>
+</section>
+
+<section id="education" data-cue="Master's at Paderborn, Bachelor's in Pune.">
+<h2>Education</h2>
+<div class="job"><h3>M.Sc. Computer Science, University of Paderborn</h3><p>Oct 2022 to Mar 2026 (coursework, seminars and project work completed)</p>
+<p>Focus: machine learning, deep learning, large language models, usable security and privacy. Seminar on prompt engineering in contemporary LLMs. Project (Apr 2023 to Mar 2024): an integrated Industry 4.0 system combining 3DExperience (Dassault Systems) and SAP S/4HANA.</p></div>
+<div class="job"><h3>B.E. Computer Science, Savitribai Phule Pune University</h3><p>Jul 2016 to Nov 2020</p></div>
+<p class="meta">Languages: English (proficient), Marathi (native), Hindi (native), German (A1).</p>
+</section>
+
+<section id="contact" data-cue="Grab my CV or write to me directly.">
+<h2>Contact</h2>
+<p>Reach me here :)</p>
+<div class="btns"><a class="btn p" href="mailto:aditi.careers.cs@gmail.com">aditi.careers.cs@gmail.com</a><a class="btn" href="https://linkedin.com/in/aditi-nerkar-428780167">LinkedIn</a><a class="btn" href="Aditi_Nerkar_CV_AI_Engineer.pdf" download>Download CV</a></div>
+</section>
+</main>
+<footer><span>&copy; 2026 Aditi Nerkar, Pune, India</span><a href="#top">Back to top</a></footer>
+
+<aside id="guide" aria-label="Page guide">
+<div id="bubble" hidden><p id="msg" role="status" aria-live="polite"></p><div id="acts"></div></div>
+<button id="av" aria-label="Ask the guide for a route through this page"><svg viewBox="0 0 10 14" shape-rendering="crispEdges" aria-hidden="true"></svg></button>
+<button id="gt" aria-pressed="true">Guide: on</button>
+</aside>
+
+<script>
+(()=>{
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const ls={g:k=>{try{return localStorage.getItem(k)}catch(e){return null}},s:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
+const ss={g:k=>{try{return sessionStorage.getItem(k)}catch(e){return null}},s:(k,v)=>{try{sessionStorage.setItem(k,v)}catch(e){}}};
+
+/* Avatar sprite. Edit colors here to match yourself. */
+const map=["...hhhh...","..hhhhhh..","..hssssh..","..sesses..","..ssssss..","...ssss...",".tttttttt.","stttttttts","stttttttts",".tttttttt.","..pppppp..","..pp..pp..","..pp..pp..",".bbb..bbb."];
+const col={h:'#2b1d16',s:'#e0ac85',e:'#1a1a1a',t:'#2f5bea',p:'#14213d',b:'#222222'};
+$('#av svg').innerHTML=map.map((r,y)=>[...r].map((c,x)=>col[c]?`<rect x="${x}" y="${y}" width="1" height="1" fill="${col[c]}"/>`:'').join('')).join('');
+
+const g=$('#guide'),bub=$('#bubble'),msg=$('#msg'),acts=$('#acts'),gt=$('#gt');
+let on=ls.g('guide')!=='0',lock=false,ask=false,cue='';
+const say=(t,a=[])=>{if(!on)return;msg.textContent=t;acts.replaceChildren(...a.map(([l,f])=>{const b=document.createElement('button');b.textContent=l;b.onclick=f;return b}));bub.hidden=false};
+const setOn=v=>{on=v;g.classList.toggle('off',!v);gt.setAttribute('aria-pressed',v);gt.textContent='Guide: '+(v?'on':'off');ls.s('guide',v?'1':'0');if(v&&cue)say(cue)};
+gt.onclick=()=>setOn(!on);
+setOn(on);
+
+/* 4. Section sidekick */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){cue=e.target.dataset.cue;if(!lock&&!ask)say(cue)}}),{threshold:.35});
+$$('[data-cue]').forEach(s=>io.observe(s));
+
+/* 1. Hover and focus popups on projects */
+$$('.card').forEach(c=>{
+ const a=()=>{if(ask)return;lock=true;say(c.dataset.hook+' Click to read the case study.')};
+ const b=()=>{if(ask)return;lock=false;say(cue)};
+ c.addEventListener('mouseenter',a);c.addEventListener('focus',a);c.addEventListener('mouseleave',b);c.addEventListener('blur',b);
+});
+
+/* 3. Viewer-type shortcut */
+const go=(sel,t)=>{ask=false;lock=true;const el=$(sel);el.scrollIntoView({behavior:rm?'auto':'smooth'});el.classList.add('flash');say(t);setTimeout(()=>{el.classList.remove('flash');lock=false;say(cue)},3500)};
+const chooser=()=>{ask=true;say('Who is reading? I will point you to the right part.',[
+ ['Recruiter',()=>go('#impact','Short version: impact numbers first, then experience.')],
+ ['Hiring manager',()=>go('#work','Both case studies show the problem, approach and outcome.')],
+ ['Engineer',()=>go('#cs-rag','Start with the architecture walkthrough, then the skills list.')],
+ ['Not now',()=>{ask=false;lock=false;say(cue)}]])};
+$('#av').onclick=()=>{if(!on)setOn(true);chooser()};
+if(on&&!ss.g('seen')){ss.s('seen','1');setTimeout(chooser,900)}
+
+/* 2. Architecture walkthrough */
+const NS=[["user",10,42,130,50,"User","","a"],["ui",190,40,220,54,"OpenWebUI chat","user roles and groups","a"],["pipe",420,140,200,50,"Pipeline","guards and request context","n"],["agent",420,215,200,54,"Vanna agent","plans, calls tools, loops","n"],["retr",420,300,200,56,"Retrieval layer","embeds question, adds context","n"],["tools",650,140,190,54,"Tool registry","run SQL, chart, memory","n"],["mem",650,215,190,54,"Agent memory","ChromaDB, question-SQL pairs","d"],["coll",650,300,190,56,"Collector + summarizer","gathers results, writes answer","n"],["db",190,200,200,60,"PostgreSQL","structured project records","d"],["kb",190,300,200,70,"ChromaDB knowledge base","schema, docs, example SQL","d"],["ing",10,200,150,130,"Data ingestion","Excel to JSON|to PostgreSQL, then|chunk and embed|schema, docs, SQL","n"],["emb",420,452,200,48,"Embeddings","text-embedding-3-large","n"],["chat",650,452,190,48,"Chat models","gpt-5, gpt-5.1","n"]];
+const ZN=[[170,10,700,400,"Docker",0,182,26,"start"],[400,110,460,290,"Pipelines server",0,852,128,"end"],[400,425,470,95,"Azure OpenAI (external API)",1,412,441,"start"]];
+const ED=["M140,67H190","M410,67H520V140","M520,190V215","M520,269V300","M620,242H635V167H650","M745,194V215","M745,269V300","M420,328H390","M470,356V452","M745,356V452","M745,140V116H290V200","M160,230H190","M160,315H190"];
+const svg=(NS,ZN,ED,vb,lab,id)=>{
+ let h=`<svg viewBox="0 0 880 ${vb}" role="img" aria-label="${lab}"><defs><marker id="ar${id}" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L8,4L0,8z" fill="var(--mut)"/></marker></defs>`;
+ ZN.forEach(([x,y,w,hh,l,d,lx,ly,an])=>{h+=`<rect x="${x}" y="${y}" width="${w}" height="${hh}" rx="12" class="z${d?' dash':''}"/><text x="${lx}" y="${ly}" text-anchor="${an}" class="sb">${l}</text>`});
+ ED.forEach(d=>{h+=`<path d="${d}" class="e" marker-end="url(#ar${id})"/>`});
+ NS.forEach(([id,x,y,w,hh,t,sb,k])=>{const L=sb?sb.split('|'):[],y0=y+(hh-(16+L.length*14))/2+12;
+  h+=`<g data-n="${id}"><rect x="${x}" y="${y}" width="${w}" height="${hh}" rx="6" class="${k}"/><text x="${x+w/2}" y="${y0}" text-anchor="middle" class="t">${t}</text>${L.map((l,i)=>`<text x="${x+w/2}" y="${y0+16+i*14}" text-anchor="middle" class="sb">${l}</text>`).join('')}</g>`});
+ return h+'</svg>'};
+const NS2=[["user",10,53,110,40,"User","","a"],["up",170,50,190,56,"Upload screen","upload large CAD drawing","a"],["rev",400,50,220,56,"Review screen","editable BOM, interactive preview","a"],["exp",650,50,200,56,"Export screen","Excel or CSV","a"],["chunk",170,230,190,56,"Chunking","split large drawings","n"],["rej",400,230,200,56,"Rejoin","merge chunks into one BOM","n"],["adi",180,368,420,44,"Azure Document Intelligence","extracts BOM data from each chunk","n"],["plan",650,215,200,90,"Downstream planning","cost calculation,|welding and assembly|planning","d"]];
+const ZN2=[[150,10,720,130,"React front end",0,162,26,"start"],[150,190,470,130,"Processing",0,162,206,"start"],[150,345,470,95,"Azure Document Intelligence (external API)",1,162,431,"start"]];
+const ED2=["M120,73H170","M360,78H400","M620,78H650","M265,106V230","M265,286V368","M500,368V286","M510,230V106","M750,106V215"];
+const W={
+rag:{fig:()=>`<div class="sv">${svg(NS,ZN,ED,530,"Architecture diagram of the agentic RAG knowledge assistant","r")}</div>`,st:[
+["Setup","Excel records are converted to JSON and loaded into PostgreSQL. Schema, documentation and example SQL are chunked and embedded into the ChromaDB knowledge base.",["ing","db","kb"]],
+["Step 1","The user asks a question in the OpenWebUI chat, which handles user roles and groups.",["user","ui"]],
+["Step 2","The request reaches the pipelines server, where a pipeline applies guards and adds user and request context.",["ui","pipe"]],
+["Step 3","A multi-tool, user-aware Vanna agent plans the work, calls tools and loops until it has what it needs.",["pipe","agent"]],
+["Step 4","Before each model call, the retrieval layer embeds the latest question with Azure OpenAI embeddings and pulls matching schema, documentation and example SQL from the knowledge base.",["retr","emb","kb"]],
+["Step 5","The agent's tools run SQL against PostgreSQL and look up similar past questions in agent memory.",["tools","db","mem"]],
+["Step 6","The agent passes SQL, table and text results to the collector and summarizer.",["agent","coll"]],
+["Step 7","The collector saves a question-to-SQL record back to agent memory.",["coll","mem"]],
+["Step 8","A second model call, on gpt-5 or gpt-5.1 through Azure OpenAI, writes the final answer.",["coll","chat"]],
+["Step 9","The answer returns to OpenWebUI and the user.",["ui","user"]]]},
+cad:{fig:()=>`<div class="sv">${svg(NS2,ZN2,ED2,450,"Architecture diagram of the CAD to BOM extraction platform","c")}</div>`,st:[
+["Step 1","The user uploads a large, complex CAD drawing on the first screen of the React front end.",["user","up"]],
+["Step 2","Custom logic splits the drawing into chunks the extraction service can handle.",["up","chunk"]],
+["Step 3","Azure Document Intelligence extracts BOM data from each chunk. Training YOLOv8 models was explored first, then replaced by this approach.",["chunk","adi"]],
+["Step 4","Chunk results are merged back into one Bill of Material for the drawing.",["adi","rej"]],
+["Step 5","The BOM appears on the review screen, where the user edits it and checks it in an interactive preview.",["rej","rev"]],
+["Step 6","The user exports the reviewed BOM to Excel or CSV.",["rev","exp"]],
+["Step 7","The exported BOM feeds cost calculation and manufacturing, welding and assembly planning.",["exp","plan"]]]}};
+$$('.flow').forEach(f=>{
+ const w=W[f.dataset.id],s=w.st,fig=f.querySelector('.fig'),st=f.querySelector('.st'),tx=f.querySelector('.txt');
+ fig.innerHTML=w.fig?w.fig():`<ol>${s.map((x,k)=>`<li data-n="c${k}"><b>${x[3]}</b>${x[1]}</li>`).join('')}</ol>`;
+ if(tx)tx.innerHTML=s.map(x=>`<li><b>${x[0]}.</b> ${x[1]}</li>`).join('');
+ const els=[...f.querySelectorAll('[data-n]')];
+ let i=0;
+ const show=n=>{i=n;
+  const ids=n<0?[]:s[n][2];
+  els.forEach(e=>e.classList.toggle('on',ids.includes(e.dataset.n)));
+  f.classList.toggle('walking',n>=0);
+  if(n<0){st.textContent='';lock=false;say(cue);return}
+  const t=`${s[n][0]}: ${s[n][1]}`;st.textContent=t;lock=true;
+  say(t,[['Back',()=>show(Math.max(0,n-1))],[n<s.length-1?'Next':'Finish',()=>show(n<s.length-1?n+1:-1)]]);
+  const el=els.find(e=>e.classList.contains('on'));if(el)el.scrollIntoView({block:'nearest',inline:'center',behavior:rm?'auto':'smooth'});
+ };
+ f.addEventListener('click',e=>{const a=e.target.dataset&&e.target.dataset.a;if(!a)return;
+  if(a==='start')i=0;else if(a==='next')i=i+1;else if(a==='prev')i=Math.max(0,i-1);else i=-1;
+  if(i>=s.length)i=-1;show(i)});
+});
+})();
+</script>
+</body>
+</html>
